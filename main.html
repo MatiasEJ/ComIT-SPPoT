@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <iframe src="./silence.mp3" allow="autoplay" id="audio" style="display:none">
+    </iframe>
+    <audio id="player2" pause>
+        <source src="./Acapella.mp3" type="audio/mp3"></audio>
+    <audio id="player" autoplay>
+        <source src="./Adventure Island cumbia.mp3" type="audio/mp3">
+    </audio>
+
+    <!-- MAIN -->
+    <div class="container">
+    <!-- TITULO      -->
+    <header>
+        <img id="titulo" src="./titulo.png" alt="">
+        <img id="turbo" src="./2turbo.png" alt="">
+    </header>
+    <!-- AREA PELEA -->
+        <!-- MENSAJE FINAL  -->
+    <div id="mensajefinal">
+        <div id="ganador">CHAMPIÑON DEL UNIVERSO ganaste!</div>
+        <div id="perdedor">PERDEDOR DEL UNIVERSO, sorry gor.</div>
+    </div>
+        <!-- VS  -->
+    <div class="pelea" style="max-width:500px">
+            <!-- PUNTAJE CPU -->
+            <div class="puntaje">
+                    <p id="puntaje_cpu" class="puntaje">0</p>
+            </div>
+            
+            <!-- /* COL PLAYER*/ -->
+            <div class="col-cpu">
+                <img class="mySlides" src="./piedra1.png" >
+            <img class="mySlides" src="./papel1.png" >
+            <img class="mySlides" src="./tijera1.png" >
+            
+            
+        
+            </div>
+
+            <!-- /* COL PLAYER*/ -->
+            <div class="col-player">
+                <img id="piedraP" name="piedra"src="./piedron.png" ><br>
+                <img id="papelP" value="papel" class="" src="./papelon.png" > <br>
+                <img id="tijeraP" value="tijera" class="" src="./tijeron.png" >
+
+                
+        
+            </div>    
+
+             <!-- PUNTAJE CPU -->
+            <div  class="puntaje">
+                    <p id="puntaje_usuario"class="puntaje">0</p>
+            </div>
+
+    </div> 
+        <!-- DEFINICION DE PUNTAJE -->
+        <div id="def">
+            <img id="gane" src="./win.webp" alt=""> 
+            <img id="perdi" src="./nelson.gif" alt="">
+            <img  id="meh2" src="./meh.gif" alt="">
+        </div>  
+        
+        <!--
+            <div id="usuario_eleccion"></div>
+            <div id="maquina_eleccion"></div>
+            <div id="resultado"></div> 
+        -->
+            <div id="lomensajito">
+         <!-- SI GANASTE -->
+         <p id="win">ACERTASTE IDOLO MASTER! GANASTE UN FERNET VITTONE!
+         </p>
+         <!-- SI PERDISTE -->
+         <p id="lose">PERDISTE (//_T)</p>
+         <!-- MEH -->
+         <p id="meh">meh...un empate</p>
+        </div>
+        <!-- BOTON PELEA! -->
+         <p id="fight">GO!</p>
+        <!-- BOTONERA   -->
+            <div class="botonera">
+                <p id ="btnVolver">Volver</p>
+            </div>
+           <!-- SELECCION DE PUNTOS -->
+            <div class="porPuntos">
+                <p id="p3">A 3 Puntos</p>
+                <p id="p5">A 5 Puntos</p>
+            </div>
+            
+            
+            
+        
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

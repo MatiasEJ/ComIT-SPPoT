@@ -1,0 +1,329 @@
+@font-face {
+    font-family: "Oldie";
+    src: url("./Gold\ Box\ Games.ttf");
+    
+    }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #0c0c0c;
+    /* width: 315px; */
+    /* height: 539px; */
+    /* margin: auto; */
+    margin-left: auto;
+    margin-right: auto;
+}
+.container {
+    display: grid;
+    justify-content: center;
+    grid-template-rows: auto auto auto;
+    /* margin-top: 5%; */
+    margin-left: auto;
+    margin-right: auto;
+    justify-items: center;
+}
+/* HEADER */
+
+
+header{
+    justify-content: center;
+    height: 139px;
+    /* margin-top: 4%; */
+}
+#turbo{
+    width: 89px;
+    right: -74%;
+    position: relative;
+    top: -21%;
+}
+#titulo{
+    width: 100%;
+    margin: auto;
+    margin-top: 0%;
+    transform: scale(0.8);
+    
+}
+#logo{
+    margin-top: 13%;
+    margin-bottom: 13%;
+    transform: scale(0.8);
+    width: max-content;
+}
+
+
+/* CUERPA */
+.pelea img{
+    width: 150px;
+    height: 67px;
+}
+
+
+.pelea {
+    display: inline-flex;
+    padding-top: 4%;
+}
+.col-cpu{
+    display: block;
+    visibility: visible;
+}
+.col-cpu img{
+    width: 95px;
+    margin-left: 11px;
+    margin-top: 6px;
+}
+
+.col-player{
+    display: block;
+    
+    visibility: visible;
+    margin-right: 3%;
+    /* margin-left: unset; */
+}
+.col-player img{
+    width: 77px;
+    height: 71px;
+}
+
+
+.mySlides {visibility: hidden;}
+/* BOTONERA */
+
+
+
+.botones{
+    font-family: 'Oldie', Arial, sans-serif;
+    color:  #dc3f3f;
+    margin: auto;
+    
+}
+.botonera{
+    text-align: center;
+}
+.botonera p{
+    font-size: 24px;
+}
+.botonera p:hover{
+    background-color: #17a4cc26;
+    font-size: 27px;
+}
+#fight{
+    display: block;
+    font-size: 22px;
+    font-family: 'Oldie', Arial, sans-serif;
+    color: #dc3f3f;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    /* margin-bottom: 7px; */
+    box-shadow: 1px 2px 0px 0px #f8f8f8;
+    height: 27px;
+    width: 94px;
+    border-radius: 39px;
+    text-align: center;
+    animation-name: pulsa;
+    animation-duration: 0.4s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    z-index: 5;
+}
+
+
+
+
+
+
+
+.porPuntos{
+    display: none;
+    font-family: 'Oldie', Arial, sans-serif;
+    color:  #dc3f3f;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+
+}
+
+.porPuntos p:hover{
+    font-size: 17px;
+    background-color: #f5b61b;
+    /* width: 188px; */
+    box-shadow: -1px -1px 12px 1px #e65353;
+    text-align: center;
+    border-radius: 28px;
+    height: 17px;
+    animation-name: menu;
+    animation-duration: 2s;
+
+}
+
+.porPuntos p{
+    font-size: 14px;
+    color:white;
+    margin: 5px;
+}
+
+
+@keyframes menu{
+    0% {}
+    50% {transform: rotateX(150deg);}
+    100% {transform: rotateX(350deg);}
+}
+
+
+@keyframes piedra {
+    0%   {left:-150px; top:-150px;}
+    
+    100% {left:0px; top:0px;}
+}
+@keyframes papel {
+    0%   {left:-350px; top:0px;}
+    
+    100% {left:0px; top:0px;}
+}
+@keyframes tijera {
+    0%   {left:-750px; top:0px;}  
+    
+    100% {transform: rotate(-360deg); left:0px; top:0px; }
+}
+
+@keyframes pulsa {
+    0%   {left:-750px; top:0px;}  
+    
+    100% {box-shadow: 1px 0px 3px 0px #d00404;}
+}
+
+
+
+
+#piedra{
+    position: relative;
+    animation-name: piedra;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-delay: 1.3s;
+    animation-timing-function: ease-out;
+}
+#papel{
+    position: relative;
+    animation-name: papel;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+    animation-delay: 1.6s;
+}
+#tijera{
+    position: relative;
+    animation-name: tijera;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+    animation-delay: 1.6s;
+}
+
+
+
+.puntaje{
+    font-family: 'Oldie', Arial, sans-serif;
+    font-size: 29px;
+    color: #fffa3a;
+    margin: auto;
+    /* margin-left: 0px; */
+    /* box-shadow: 0px -1px 10px 2px #dab3b3; */
+    background: #f52e2e;
+    border-radius: 17px;
+    /* height: 220px; */
+    /* margin-top: 2px; */
+    /* text-align: center; */
+    margin-left: 5px;
+    margin-right: 7px;
+}
+
+
+#win, #lose, #meh{
+    display: none;
+    font-size: 20px;
+    color: #24e60e;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+
+#tijeraP{
+    height: 85px;
+}
+
+
+#btnVolver{
+    font-family: 'Oldie', Arial, sans-serif;
+    color:  #dc3f3f;
+    margin: auto;
+}
+
+
+#piedra{
+    background-image: url("./imagenes/piedra.png");
+  }
+
+  #tijera{
+    background-image:url("./imagenes/tijera.png");
+  }
+
+  #papel{
+    background-image:url("./imagenes/papel.png");
+  }
+
+  #piedra, #tijera, #papel{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 105px;
+    width: 103px;
+    background-position: center;
+    margin: auto;
+    display: inline-block;
+    cursor: pointer
+  }
+
+#def{
+    margin: auto;
+}
+
+
+#gane{
+      display: none;
+      margin: auto;
+      width: 221px;
+    }
+#perdi{
+    display: none;
+    width: 128px;
+}
+
+#meh2{
+    display: none;
+    width: 250px;
+}
+
+#ganador, #perdedor{
+    display: none;
+    font-size: 23px;
+    box-shadow: 0 0 0 9px #e00000;
+    margin-bottom: 15px;
+    color: white;
+    text-align: center;
+}
+
+.col-player img:hover{
+    background-color: yellow;
+    box-shadow: 0 0 6px 3px yellow;
+    border-radius: 71px;
+}
+
+
