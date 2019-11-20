@@ -31,7 +31,7 @@ body{
 
 header{
     justify-content: center;
-    height: 139px;
+    height: 100%;
     /* margin-top: 4%; */
 }
 #turbo{
