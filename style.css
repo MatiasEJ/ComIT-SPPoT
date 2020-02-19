@@ -31,7 +31,7 @@ body{
 
 header{
     justify-content: center;
-    height: 139px;
+    height: 30vh;
     /* margin-top: 4%; */
 }
 #turbo{
@@ -41,15 +41,16 @@ header{
     top: -21%;
 }
 #titulo{
-    width: 100%;
+    width: 80%;
     margin: auto;
-    margin-top: 0%;
-    transform: scale(0.8);
-    
+    margin-top: 3%;
+    /* transform: scale(0.8); */
+    display: flex;
+    justify-content: center;
 }
 #logo{
     margin-top: 13%;
-    margin-bottom: 13%;
+    margin-bottom: 9%;
     transform: scale(0.8);
     width: max-content;
 }
@@ -65,10 +66,12 @@ header{
 .pelea {
     display: inline-flex;
     padding-top: 4%;
+    margin-top: 10%;
 }
 .col-cpu{
     display: block;
     visibility: visible;
+    width: min-content;
 }
 .col-cpu img{
     width: 95px;
@@ -78,10 +81,10 @@ header{
 
 .col-player{
     display: block;
-    
     visibility: visible;
-    margin-right: 3%;
+    /* margin-right: 3%; */
     /* margin-left: unset; */
+    width: min-content;
 }
 .col-player img{
     width: 77px;
@@ -291,7 +294,7 @@ header{
     cursor: pointer
   }
 
-#def{
+#def {
     margin: auto;
 }
 
@@ -314,10 +317,16 @@ header{
 #ganador, #perdedor{
     display: none;
     font-size: 23px;
-    box-shadow: 0 0 0 9px #e00000;
+    border: 4px solid;
+    border-radius: 40px;
+    box-shadow: 0 0 0 9px #0d9dff;
     margin-bottom: 15px;
     color: white;
     text-align: center;
+    z-index: 12;
+    background-color: black;
+    padding: 9%;
+    margin: 50% 23%;
 }
 
 .col-player img:hover{
