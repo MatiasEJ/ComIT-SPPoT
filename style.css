@@ -31,7 +31,11 @@ body{
 
 header{
     justify-content: center;
+<<<<<<< HEAD
     height: 30vh;
+=======
+    height: 100%;
+>>>>>>> 2e110e2909890909662a3c6c0299c6ab70286ffe
     /* margin-top: 4%; */
 }
 #turbo{

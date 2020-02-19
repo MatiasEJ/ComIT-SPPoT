@@ -3,8 +3,8 @@ var st = ["Piedra", "Papel", "o Tijera"];
 var superpiedra = ["SUPER, PIEDRA PAPEL O TIJERA... DOS?...TURBO?"];
 var voices = window.speechSynthesis.getVoices();
 
-var audio = document.getElementById("player2").volume = 0.2;
-var audio2 = document.getElementById("player").volume = 0.2;
+var audio = document.getElementById("player2").volume = 0.07;
+var audio2 = document.getElementById("player").volume = 0.07;
 
 var puntaje_us = 0;
 var puntaje_cpu = 0;
